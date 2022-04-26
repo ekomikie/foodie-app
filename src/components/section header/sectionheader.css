@@ -1,0 +1,26 @@
+.section-title {
+  margin: 0.5rem auto;
+  width: fit-content;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  border-bottom: 2px solid #f58634;
+}
+
+@media screen and (max-width: 1024px) {
+  .section-title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .btn {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .section-title {
+    font-size: 20px;
+  }
+}

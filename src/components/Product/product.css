@@ -1,0 +1,137 @@
+.product-container {
+  padding: 2rem 8rem;
+}
+
+.button-container {
+  margin: 2rem 0;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.tab-box {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.product-container > h4 {
+  font-size: 1.2rem;
+}
+
+.all-meals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.meal {
+  height: 400px;
+  position: relative;
+  border: 2px solid #f58634;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30%;
+}
+
+.meal.meal-breakfast:first-child {
+  background-image: url('../../images/Product-1.jpg');
+}
+
+.meal.meal-breakfast:nth-child(2) {
+  background-image: url('../../images/Product-2.jpg');
+}
+
+.meal.meal-breakfast:last-child {
+  background-image: url('../../images/Product-3.jpg');
+}
+
+.meal.meal-lunch:first-child {
+  background-image: url('../../images/Product-4.jpg');
+}
+
+.meal.meal-lunch:nth-child(2) {
+  background-image: url('../../images/Product-5.jpg');
+}
+
+.meal.meal-lunch:last-child {
+  background-image: url('../../images/Product-6.jpg');
+}
+
+.meal.meal-dinner:first-child {
+  background-image: url('../../images/Product-7.jpg');
+}
+
+.meal.meal-dinner:nth-child(2) {
+  background-image: url('../../images/Product-8.jpg');
+}
+
+.meal.meal-dinner:last-child {
+  background-image: url('../../images/Product-9.jpg');
+}
+
+.meal.meal-dessert:first-child {
+  background-image: url('../../images/Product-10.jpg');
+}
+
+.meal.meal-dessert:nth-child(2) {
+  background-image: url('../../images/Product-11.jpg');
+}
+
+.meal.meal-dessert:last-child {
+  background-image: url('../../images/Product-12.jpg');
+}
+
+.meal > div {
+  position: absolute;
+  bottom: 0.5rem;
+  padding: 1rem;
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 1024px) {
+  .product-container {
+    padding: 2rem 6rem;
+  }
+  .all-meals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  .meal {
+    width: 45%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product-container {
+    padding: 2rem 4rem;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .product-container {
+    padding: 2rem;
+  }
+  .all-meals {
+    flex-direction: column;
+  }
+
+  .meal {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

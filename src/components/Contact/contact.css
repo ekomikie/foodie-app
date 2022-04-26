@@ -1,0 +1,137 @@
+.contact-container {
+  padding: 2rem 8rem;
+}
+
+.contact-container p {
+  font-size: 1.4rem;
+  text-align: center;
+  opacity: 0.5;
+  font-weight: lighter;
+}
+
+.contact-container p span {
+  color: #f58634;
+}
+
+.input-flex {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.input-box {
+  width: 40%;
+}
+
+.input-box input {
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  width: 100%;
+  border: 2px solid #f58634;
+  background-color: #091c0f;
+  color: #fff;
+  outline: none;
+}
+
+.message-box {
+  margin: 2rem 0 0.5rem;
+}
+
+textarea {
+  margin-top: 0.5rem;
+  width: 100%;
+  background-color: #091c0f;
+  color: #fff;
+  border: 2px solid #f58634;
+  outline: none;
+  padding: 1rem;
+}
+
+.contact-btn-container {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-container {
+  padding: 2.5rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-item {
+  display: flex;
+  align-items: center;
+}
+
+.icon-item > p {
+  padding: 8px 6px 8px 12px;
+  font-weight: normal;
+  text-align: start;
+}
+
+.phone-wrapper,
+.map-wrapper,
+.message-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 3rem;
+  min-height: 3rem;
+  border-radius: 50%;
+  border: 2px solid #f58634;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-container {
+    padding: 2rem 6rem;
+  }
+
+  .contact-container p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    padding: 2rem 4rem;
+  }
+
+  .contact-container p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .contact-container {
+    padding: 1rem 2rem;
+  }
+
+  .input-flex {
+    flex-direction: column;
+  }
+
+  .input-box {
+    width: 100%;
+  }
+
+  .icon-container {
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: flex-start;
+  }
+  .icon-item {
+    align-items: flex-start;
+
+    margin-bottom: 1.3rem;
+    width: 100%;
+  }
+  .break {
+    display: none;
+  }
+}

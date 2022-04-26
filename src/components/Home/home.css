@@ -1,0 +1,137 @@
+.hero-container {
+  padding: 1rem 8rem;
+  display: flex;
+  direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hero-text {
+  padding-top: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.hero-text h1 .orange {
+  color: #f58634;
+}
+
+.hero-text .heading-light {
+  font-size: 50px;
+  font-weight: lighter;
+}
+
+.hero-text p {
+  padding: 1rem 0;
+  max-width: 500px;
+  font-weight: lighter;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-container {
+    padding: 1rem 6rem;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+
+  .hero-text .heading-light {
+    font-size: 40px;
+  }
+
+  .hero-text p {
+    padding: 1rem 0;
+    max-width: 370px;
+    font-weight: lighter;
+    opacity: 0.5;
+    font-size: 1.2rem;
+  }
+  .hero-image-box {
+    width: 400px;
+  }
+
+  .hero-image-box img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    padding: 1rem 4rem;
+  }
+
+  .hero-text h1 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+
+  .hero-text .heading-light {
+    font-size: 30px;
+  }
+
+  .hero-text p {
+    max-width: 100%;
+    font-size: 1.1rem;
+  }
+
+  .hero-text {
+    width: 50%;
+  }
+  .hero-image-box {
+    width: 50%;
+  }
+  .hero-image-box img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .hero-text {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .hero-text h1 {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.1;
+    text-align: center;
+  }
+
+  .hero-text .heading-light {
+    font-size: 25px;
+  }
+
+  .hero-text p {
+    max-width: 100%;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .hero-image-box {
+    width: 100%;
+  }
+  .hero-image-box img {
+    max-width: 100%;
+  }
+}
